@@ -9,5 +9,4 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -r requirements-dev.txt
-      - env: { PYTHONPATH: . }
-      - run: pytest -v
+      - run: python -m pytest -v
